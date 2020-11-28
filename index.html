@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min_pulse.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather App</title>
+</head>
+
+<body class="bg-light">
+    <!-- The data for the weather -->
+    <section id="weather-input">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto  mt-5">
+                    <div class="card card-body bg-gradient text-white shadow border-0 rounded  text-center">
+                        <div class="w-attribute">
+                            <h2 id="w-location" class="font-weight-bold text-header"></h2>
+                            <h3 id="w-desc" class="text-warning text-light"></h3>
+                            <h3 id="w-temp"></h3>
+                            <img id="w-icon">
+                        </div>
+
+                        <ul class="list-group bg-light rounded ">
+                            <li class="list-group-item bg-gradient-list rounded text-dark" id="w-humidity"></li>
+                            <li class="list-group-item bg-gradient-list text-dark" id="w-dewpt"></li>
+                            <li class="list-group-item bg-gradient-list text-dark" id="w-wind-direction"></li>
+                            <li class="list-group-item rounded-bottom bg-gradient-list text-dark" id="w-wind"></li>
+                        </ul>
+
+                        <hr>
+                        <button type="button" class="btn bg-change text-white rounded" data-toggle="modal" data-target="#myModal">
+                            Change Location
+                          </button>
+
+
+                        <!-- MODAL EDIITING IN HERE -->
+                        <div class="modal" id="myModal">
+                            <div class="modal-dialog ">
+                                <div class="modal-content  rounded border-0 bg-gradient-modal">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title text-dark">Change Location</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <form id="w-change-location">
+                                            <div class="form-group text-dark text-left">
+                                                <label for="location">City:</label>
+                                                <input type="text" class="form-control rounded" id="city" placeholder="city here">
+                                            </div>
+
+                                            <div class="form-group text-dark text-left">
+                                                <label for="country">Country</label>
+                                                <input type="text" class="form-control rounded" id="country" placeholder="country-abbreviation">
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-custom rounded text-white" id="save">Save Changes</button>
+                                        <button type="button" class="btn btn-close text-white rounded" data-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer class="main-footer mt-5 text-center bg-custom p-3 ">
+        <p>Weather App 2020&copy;</p>
+    </footer>
+
+    <!-- SCRIPT LINK HERE -->
+    <script src="./js 4.3.1/jquery_3.3.1.min.js "></script>
+    <script src="./js 4.3.1/popper.min.js "></script>
+    <script src="./js 4.3.1/bootstrap.min.js "></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/ui.js "></script>
+    <script src="./js/storage.js "></script>
+    <script src="./js/app.js "></script>
+</body>
+
+</html>
