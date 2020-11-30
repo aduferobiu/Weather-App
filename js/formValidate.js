@@ -29,7 +29,7 @@ function validate(re, str) {
 const message = document.getElementById('message').addEventListener('blur', validateMsg)
 
 function validateMsg(e) {
-    let re = /[A-Za-z0-9\_\.\/]{10,300}/i
+    let re = /[A-Za-z0-9\_\.\/\ ]{10,300}/i
 
     str = document.getElementById('message')
 
