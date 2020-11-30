@@ -131,6 +131,13 @@
 }
 
 
+/* font */
+
+.font-montserrat {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+
 /* .form-custom:focus .card-edit {
     background-color: #f4f4f4;
     color: #333;
