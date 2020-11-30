@@ -5,11 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min_pulse.css">
+    <link rel="shortcut icon" href="./img/Weatherlly logo-08.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Weather App</title>
+    <title>Weatherlly | homepage</title>
 </head>
 
-<body class="bg-light">
+<body class="bg-light" id="body">
+    <nav class="navbar navbar-expand-md navbar-light bg-custom p-2" id="navbar">
+        <div class="container">
+            <!-- for the brand -->
+            <a href="index.html" class="navbar-brand"><img src="./img/Weatherlly logo-04.png" alt="weatherlly logo" class="img-fluid brand-logo"></a>
+
+
+            <!-- nav toogle bar -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <!-- navlink -->
+            <div class="collapse navbar-collapse ml-auto" id="Navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item px-3"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item px-3"><a href="contact.html" class="nav-link" id="contact">Contact</a></li>
+                    <li class="nav-item px-3"><a href="3" class="nav-link dark" id="theme">Dark Theme</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
     <!-- The data for the weather -->
     <section id="weather-input">
         <div class="container">
@@ -82,8 +106,8 @@
 
 
 
-    <footer class="main-footer mt-5 text-center bg-custom p-3 ">
-        <p>Weather App 2020&copy;</p>
+    <footer class="main-footer mt-5 text-center bg-custom p-3 " id="main-footer">
+        <p>weatherlly 2020&copy;</p>
     </footer>
 
     <!-- SCRIPT LINK HERE -->
@@ -93,6 +117,7 @@
     <script src="./js/weather.js"></script>
     <script src="./js/ui.js "></script>
     <script src="./js/storage.js "></script>
+    <script src="./js/darktheme.js "></script>
     <script src="./js/app.js "></script>
 </body>
 
