@@ -49,7 +49,8 @@
 
 .bg-nav {
     /* background-color: #2a7ce7; */
-    background: linear-gradient(-135deg, #4d85fd, #0438c7);
+    /* background: linear-gradient(-135deg, #4d85fd, #0438c7); */
+    background: linear-gradient(135deg, #0030b3, #618cff);
 }
 
 .brand-logo {
@@ -58,6 +59,75 @@
 
 .sub-text {
     font-family: 'Montserrat';
+}
+
+.bg-footer {
+    background-color: #333;
+}
+
+
+/* styling the image */
+
+.img-info {
+    height: 350px;
+}
+
+
+/* -----------------contact form styling */
+
+.btn-submit {
+    /* background-color: #618cff; */
+    /* background: linear-gradient(135deg, #1146d6, #032992); */
+    background: #5e7ccc;
+    border: none;
+}
+
+.btn-submit:hover {
+    background: #618cff;
+}
+
+
+/* backgorund of the info i the index page */
+
+.bg-city {
+    background: url('../img/nature_2.jpg') no-repeat fixed center center/cover;
+    position: relative;
+    height: 120px;
+}
+
+.bg-city-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* city in the home page */
+
+.city-img {
+    width: 200px;
+}
+
+.city-name {
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}
+
+
+/* styling of text */
+
+.text-gray {
+    color: #333;
+}
+
+
+/* social-media-handles */
+
+.bg-social-media {
+    background-color: #0074f8;
 }
 
 

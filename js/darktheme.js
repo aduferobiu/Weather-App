@@ -1,5 +1,7 @@
 //dark theme
-document.querySelector('.dark').addEventListener('click', (e) => {
+const dark = document.querySelector('.dark')
+
+dark.addEventListener('click', (e) => {
     e.preventDefault()
     const body = document.getElementById('body')
 
@@ -14,7 +16,7 @@ document.querySelector('.dark').addEventListener('click', (e) => {
     logo.setAttribute('src', './img/Weatherlly logo-09.png')
 
     const footer = document.getElementById('main-footer')
-    footer.className = 'main-footer mt-5 text-center text-dark bg-light p-3'
+    footer.className = 'main-footer mt-5 text-center text-muted bg-footer p-3'
 
     let link = document.querySelector('#theme')
     link.textContent = 'Light Theme'
