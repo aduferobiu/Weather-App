@@ -9,6 +9,11 @@ dark.addEventListener('click', (e) => {
     body.classList.add('bg-dark')
     body.classList.add('text-white')
 
+
+    let link = document.querySelector('#theme')
+    link.textContent = 'Light Theme'
+    link.classList.add('light-theme')
+
     const navbar = document.getElementById('navbar')
     navbar.className = 'navbar navbar-expand-md navbar-dark bg-nav p-2'
 
@@ -24,9 +29,6 @@ dark.addEventListener('click', (e) => {
     const sendMessageTitle = document.getElementById('send-message-title')
     sendMessageTitle.className = 'font-weight-bold card-title mt-2 text-white'
 
-    let link = document.querySelector('#theme')
-    link.textContent = 'Light Theme'
-    link.classList.add('light-theme')
 
     //for the contat form in the header
     const contactInfo = document.getElementById('contact-info'),
