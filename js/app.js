@@ -18,7 +18,9 @@ document.getElementById('save').addEventListener('click', (e) => {
 
     getWeather()
 
-    //close
+    city.value = ''
+    country.value = ''
+        //close
     $('#myModal').modal('hide')
 })
 
@@ -32,5 +34,21 @@ function getWeather() {
         .then(res => {
             ui.pasteInfo(res)
         })
-        .catch(err => console.log(err))
+        .catch(err => {
+            const weather = document.getElementById('weather-input')
+            const container = document.getElementById('weather-insert')
+
+            const errInfo = document.createElement('div')
+            errInfo.className = 'alert alert-danger remove-alert text-center'
+            errInfo.appendChild(document.createTextNode('Sorry!, The Locations input are incorrect'))
+            weather.insertBefore(errInfo, container)
+
+            setTimeout(() => {
+                errInfo.remove()
+            }, 4000)
+        })
+}
+
+function removeErr() {
+
 }

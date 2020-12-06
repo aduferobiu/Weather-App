@@ -1,0 +1,100 @@
+body {
+    background-color: #17141f;
+    color: #fff;
+}
+
+.nav-item {
+    color: #fff;
+}
+
+.bg-footer {
+    background-color: #333;
+    color: #868e96;
+}
+
+.bg-nav {
+    /* background-color: #2a7ce7; */
+    /* background: linear-gradient(-135deg, #4d85fd, #0438c7); */
+    background: linear-gradient(135deg, #0030b3, #618cff);
+}
+
+.bg-gradient-list {
+    background-image: linear-gradient(white, #e9ecef 60%, #e3e7eb);
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.bg-change {
+    background-image: linear-gradient(#88c149, #73a839 60%, #699934);
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.bg-gradient {
+    /* background: linear-gradient(135deg, #7b4397, #dc2430); */
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    /* background: linear-gradient(135deg, #72a4df, hsl(218, 80%, 47%));
+    box-shadow: 0px 8px 16px #9cc7f7c9; */
+}
+
+.btn-submit {
+    /* background-color: #618cff; */
+    /* background: linear-gradient(135deg, #1146d6, #032992); */
+    background: #5e7ccc;
+    border: none;
+}
+
+.brand-logo {
+    width: 160px;
+}
+
+
+/* For the check weather */
+
+.bg-city {
+    background: url('../img/nature_2.jpg') no-repeat fixed center center/cover;
+    position: relative;
+    height: 120px;
+}
+
+.bg-city-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-custom {
+    background: linear-gradient(135deg, #0074f8, hsl(218, 80%, 40%));
+    border: none;
+    box-shadow: 0px 4px 8px #c6e1ffbe;
+}
+
+.btn-close {
+    background: linear-gradient(135deg, hsl(0, 100%, 49%), hsl(0, 75%, 41%));
+    border: none;
+    box-shadow: 0px 4px 8px #facbc5;
+}
+
+.bg-custom {
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-sub {
+    color: #e9ecef;
+}
+
+.text-theme {
+    color: #fff;
+}
+
+.text-header {
+    color: #0c1f42;
+}
+
+.btn-submit:hover {
+    background: #618cff;
+}

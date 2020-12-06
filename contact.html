@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min_pulse.css">
     <link rel="shortcut icon" href="./img/Weatherlly logo-08.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
+    <link id="theme" rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./fonts/font-awesome/css/font-awesome.min.css">
-    <title>Weatherlly | Contact</title>
+    <title>Weatherlly | homepage</title>
 </head>
 
-<body class="bg-light get-response" id="body" onload="loader()">
+<body>
     <nav class="navbar navbar-expand-md navbar-light bg-custom p-2" id="navbar">
         <div class="container">
             <!-- for the brand -->
@@ -28,7 +28,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item px-3"><a href="index.html" class="nav-link" id="home">Home</a></li>
                     <li class="nav-item px-3"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item px-3"><a href="3" class="nav-link dark" id="theme">Dark Theme</a></li>
+                    <li class="nav-item px-3"><a href="3" class="nav-link dark" id="theme-switcher">Dark Theme</a></li>
                 </ul>
             </div>
         </div>
@@ -46,19 +46,19 @@
                         <h5 class="font-weight-bold text-gray mt-3" id="contact-us-header">
                             Contact us!
                         </h5>
-                        <p class="mt-2 text-dark font-montserrat" id="contact-us-text">Get in touch with us on a new things you feel </p>
+                        <p class="mt-2 contact-sub font-montserrat" id="contact-us-text">Get in touch with us on a new things you feel </p>
                     </div>
                     <div class="contact">
                         <h5 class="font-weight-bold text-gray mt-3" id="phone-number-header">
                             Phone Number
                         </h5>
-                        <p class="mt-2 text-dark font-montserrat" id="phone-number-text">(+234) 7089 337 6649 </p>
+                        <p class="mt-2 contact-sub font-montserrat" id="phone-number-text">(+234) 7089 337 6649 </p>
                     </div>
                     <div class="contact">
                         <h5 class="font-weight-bold text-gray mt-3" id="mail-header">
                             Mail
                         </h5>
-                        <p class="mt-2 text-dark font-montserrat" id="mail-text">aduferobiu@gmail.com </p>
+                        <p class="mt-2 contact-sub font-montserrat" id="mail-text">aduferobiu@gmail.com </p>
                     </div>
                     <div class="contact">
                         <h5 class="font-weight-bold text-gray mt-3" id="follow-us-header">
@@ -95,7 +95,7 @@
 
                 <div class="col-md-8 mt-3 mx-auto">
                     <div class="card card-body bg-custom rounded border-0 shadow p-3" id="send-message">
-                        <h4 class="font-weight-bold card-title mt-2 text-dark" id="send-message-title">Send Us a Message</h4>
+                        <h4 class="font-weight-bold card-title mt-2" id="send-message-title">Send Us a Message</h4>
                         <p class="font-italic mt-n3 text-muted">It won't take long</p>
                         <form class="mt-3" method="POST" data-netlify="true">
                             <div class="form-group">
@@ -140,12 +140,7 @@
     <script src="./js 4.3.1/popper.min.js "></script>
     <script src="./js 4.3.1/bootstrap.min.js "></script>
     <script src="./js/formValidate.js "></script>
-    <script src="./js/darktheme.js "></script>
-    <script>
-        function loader() {
-            alert('We would like to hear from you, Send us a message. \n Thank you for visiting')
-        }
-    </script>
+    <script src="./js/theme.js "></script>
 </body>
 
 </html>
